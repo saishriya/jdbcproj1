@@ -1,0 +1,8 @@
+package com.assignment.factorial;
+
+public class FactorialServiceImpl {
+
+	public static void main(String[] args) {
+		
+	}
+}

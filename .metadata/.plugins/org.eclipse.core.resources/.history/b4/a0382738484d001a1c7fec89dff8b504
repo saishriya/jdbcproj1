@@ -1,0 +1,48 @@
+<wsdl:definitions
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+    xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+    xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+    xmlns:wsp="http://www.w3.org/ns/ws-policy"
+    xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy"
+    xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy"
+    xmlns:ns0="http://default_package/" targetNamespace="http://default_package/">
+  <wsdl:types
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:schema>
+      <xsd:import schemaLocation="HelloWorldPort.xsd1.xsd" namespace="http://default_package/"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="sayHello">
+    <wsdl:part name="parameters" element="xsns:sayHello"
+               xmlns:xsns="http://default_package/"/>
+  </wsdl:message>
+  <wsdl:message name="sayHelloResponse">
+    <wsdl:part name="parameters" element="xsns:sayHelloResponse"
+               xmlns:xsns="http://default_package/"/>
+  </wsdl:message>
+  <wsdl:portType name="HelloWorld">
+    <wsdl:operation name="sayHello">
+      <wsdl:input name="sayHello" message="ns0:sayHello"/>
+      <wsdl:output name="sayHelloResponse" message="ns0:sayHelloResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="HelloWorldServiceSoapBinding" type="ns0:HelloWorld">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="sayHello">
+      <soap11:operation soapAction="" style="document"/>
+      <wsdl:input name="sayHello">
+        <soap11:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sayHelloResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloWorldService">
+    <wsdl:port name="HelloWorldPort" binding="ns0:HelloWorldServiceSoapBinding">
+      <soap11:address location="http://localhost:8080/MyCXFWebService/services/HelloWorldPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

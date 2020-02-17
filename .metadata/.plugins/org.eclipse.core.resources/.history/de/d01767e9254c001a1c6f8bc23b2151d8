@@ -1,0 +1,23 @@
+package swap;
+import java.util.*; 
+
+public class Swap {  
+  
+    public static void main(String[] args) {  
+       int x, y, t;// x and y are to swap   
+       
+       System.out.println("Enter the value of X and Y"); 
+       Scanner sr = new Scanner(System.in);
+	x = sr.nextInt(); 
+       y = sr.nextInt(); 
+       System.out.println("before swapping numbers: "+x +" "+ y); 
+       /*swapping */  
+       t = x;  
+       x = y;  
+       y = t;  
+       System.out.println("After swapping: "+x +"   " + y);  
+       System.out.println( );  
+    }    
+}  
+
+

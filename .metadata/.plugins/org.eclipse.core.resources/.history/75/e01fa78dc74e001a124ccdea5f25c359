@@ -1,0 +1,12 @@
+package com.assignments.db;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		
+		DBObject dbObject = new DBObject();
+		dbObject.setPassword("");
+		dbObject.setUserName("");
+		DBConnectService db = new DBConnectServiceImpl().createDBAlert(dbObject);
+	}
+}

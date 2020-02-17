@@ -1,0 +1,6 @@
+org\example\newwsdlfile\package-info.class
+org\example\newwsdlfile\NewOperationResponse.class
+org\example\newwsdlfile\NewWSDLFile.class
+org\example\newwsdlfile\NewWSDLFile_Service.class
+org\example\newwsdlfile\ObjectFactory.class
+org\example\newwsdlfile\NewOperation.class

@@ -1,0 +1,8 @@
+1581560440289	Extract method 'extracted'
+1581560669756	Delete elements
+1581641509400	Extract method 'createDBAlert'
+1581642093201	Extract local variable 'execute'
+1581642197482	Extract local variable 'connection'
+1581642281500	Move compilation unit
+1581642285991	Move compilation unit
+1581642292894	Move compilation unit

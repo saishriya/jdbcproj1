@@ -1,0 +1,21 @@
+package com.number.util;
+
+public class FactorialNumber {
+	
+
+	public int factorialNumber(int num) {
+		int fact = 1;
+		for (int i = 1; i <= num; i++)
+			fact = fact * i;
+		return fact;
+		
+
+	}
+
+	public static void main(String[] args) {
+		new FactorialNumber().factorialNumber(8);
+		System.out.println(fact);
+		
+		
+	}
+}

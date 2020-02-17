@@ -1,0 +1,6 @@
+com\codenotfound\types\helloworld\Greeting.class
+com\codenotfound\types\helloworld\ObjectFactory.class
+com\codenotfound\types\helloworld\package-info.class
+com\codenotfound\services\helloworld\HelloWorldService.class
+com\codenotfound\services\helloworld\HelloWorldPortType.class
+com\codenotfound\types\helloworld\Person.class

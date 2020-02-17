@@ -1,0 +1,9 @@
+package com.assignment.factorial;
+
+public class FactorialServiceImpl {
+
+	public static void main(String[] args) {
+		ApplicationUtils a = new ApplicationUtils();
+		a.reverse(23456);
+	}
+}

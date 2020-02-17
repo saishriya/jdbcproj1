@@ -1,0 +1,23 @@
+package PosNeg;
+import java.util.*;
+
+
+public class Positive {
+	public static void main(String[] args) {
+		int N;
+		System.out.println("Enter an integer:");
+		
+		Scanner Sr = new Scanner(System.in);
+		N=Sr.nextInt();
+		
+		if (N>0)
+		{ System.out.println(+N +" is positive");
+		
+		}
+		else { 
+	 System.out.println(+N +" is negative"); 
+		}
+		
+	}
+
+}

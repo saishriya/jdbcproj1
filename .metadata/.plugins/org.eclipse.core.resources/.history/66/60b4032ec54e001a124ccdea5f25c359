@@ -1,0 +1,6 @@
+package com.test;
+
+public interface DBConnectService {
+
+	public final static String SQL="insert into author (id,name,country,last_update) values (2,'Priya','UK',now())";
+}
