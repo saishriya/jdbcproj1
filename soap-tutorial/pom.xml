@@ -5,6 +5,7 @@
 	<groupId>com.hascode.jaxws</groupId>
 	<artifactId>soap-tutorial</artifactId>
 	<version>0.1</version>
+	<packaging>war</packaging>
 	<dependencies>
 	
 	<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
